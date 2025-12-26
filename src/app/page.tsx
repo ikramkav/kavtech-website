@@ -23,16 +23,24 @@ import ParallaxCardsDemo from "@/components/ParallaxCardsDemo";
 import Index from "@/components/ui/Parallaxcards";
 import StackingCards from "@/components/ui/StackingCards";
 import StackingCard from "@/components/ui/StackingCard";
+import BackgroundBeamsComponent from "@/components/ui/BackgroundBeamsComponent";
+import ProjectsCardsFour from "@/components/ui/ProjectsCardsFour";
+import ProjectsCardsFive from "@/components/ui/ProjectsCardsFive";
 
 export default function HomePage() {
   return (
     <main>
       <div className="absolute  z-0 w-[450px] h-[150px] rounded-full opacity-20 bg-[#0367FC] blur-[125px] top-[-40] left-1/2 -translate-x-1/2" />
 
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <BackgroundBeamsComponent/>
       {/* <StackingCards /> */}
       {/* <GsapAccordion2  /> */}
-      <StackingCard/>
+      
+      {/* <ProjectsCardsFour /> */}
+      <ProjectsCardsFive/>
+
+      {/* <StackingCard/> */}
       
       {/* <GsapAccordion /> */}
       {/* <ScrollStackSection />  */}
@@ -40,7 +48,7 @@ export default function HomePage() {
       <div className="mx-50 ">{/* <HomeSlider /> */}</div>
       <MVPs />
       <BusinessSection />
-      <VentureStudioAnimated />
+      {/* <VentureStudioAnimated /> */}
       {/* <VentureStudio /> */}
       <ProvenResults />
       <CenteredSlider />

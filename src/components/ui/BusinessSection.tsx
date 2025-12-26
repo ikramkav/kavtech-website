@@ -560,7 +560,7 @@ export default function BusinessSection() {
                   transform: "rotateY(180deg)",
                 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 via-cyan-500/90 to-teal-500/90 rounded-3xl" />
+                <div className="absolute inset-0 bg-[#005BFF] rounded-3xl" />
                 <p
                   className="text-white text-center text-base md:text-lg leading-relaxed relative z-10 font-medium px-4"
                   style={{

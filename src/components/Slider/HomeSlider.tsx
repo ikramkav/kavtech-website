@@ -39,17 +39,17 @@ export default function HomeSlider() {
         // add more logos here
       ],
     },
-    {
-      direction: "slideLeft",
-      logos: [
-        { src: "/images/Clients-logo/mdb.png", alt: "MDB" },
-        { src: "/images/Clients-logo/zilow.png", alt: "ZILLOW" },
-        { src: "/images/Clients-logo/chemco.png", alt: "CHEMCO" },
-        { src: "/images/Clients-logo/ylopo.png", alt: "YLOPO" },
-        { src: "/images/Clients-logo/cammi.png", alt: "CAMMI" },
-        // add more logos here
-      ],
-    },
+    // {
+    //   direction: "slideLeft",
+    //   logos: [
+    //     { src: "/images/Clients-logo/mdb.png", alt: "MDB" },
+    //     { src: "/images/Clients-logo/zilow.png", alt: "ZILLOW" },
+    //     { src: "/images/Clients-logo/chemco.png", alt: "CHEMCO" },
+    //     { src: "/images/Clients-logo/ylopo.png", alt: "YLOPO" },
+    //     { src: "/images/Clients-logo/cammi.png", alt: "CAMMI" },
+        
+    //   ],
+    // },
   ];
 
   return (
@@ -197,8 +197,8 @@ export default function HomeSlider() {
                     <Image
                       src={logo.src}
                       alt={logo.alt}
-                      width={150}
-                      height={60}
+                      width={70}
+                      height={40}
                       className="object-contain"
                     />
                   </div>
