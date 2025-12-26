@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  min-height: 100vh; 
+}
+
+.rotateIcons {
+  position: absolute;
+  animation: orbit 15s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+.rotateIcons:nth-child(2) {
+  animation-delay: 0s;
+}
+
+.rotateIcons:nth-child(3) {
+  animation-delay: -2.5s;
+}
+
+.rotateIcons:nth-child(4) {
+  animation-delay: -5s;
+}
+
+.rotateIcons:nth-child(5) {
+  animation-delay: -7.5s;
+}
+
+.rotateIcons:nth-child(6) {
+  animation-delay: -10s;
+}
+
+.rotateIcons:nth-child(7) {
+  animation-delay: -12.5s;
+}
