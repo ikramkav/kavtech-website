@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const pathname = usePathname();
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -45,19 +47,47 @@ export default function Navbar() {
 
       {/* Nav Links */}
       <div className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
-        <Link href="/" className="text-blue-600 font-semibold">
+        <Link
+          href="/"
+          className={`transition ${
+            pathname === "/"
+              ? "text-[#0367FC] font-semibold"
+              : "hover:text-gray-900"
+          }`}
+        >
           Home
         </Link>
-        <Link href="/services" className="hover:text-gray-900 transition">
+
+        <Link
+          href="/services"
+          className={`transition ${
+            pathname === "/services"
+              ? "text-[#0367FC] font-semibold"
+              : "hover:text-gray-900"
+          }`}
+        >
           Services
         </Link>
-        <Link href="/caseStudies" className="hover:text-gray-900 transition">
+
+        <Link
+          href="/caseStudies"
+          className={`transition ${
+            pathname === "/caseStudies"
+              ? "text-[#0367FC] font-semibold"
+              : "hover:text-gray-900"
+          }`}
+        >
           Case Studies
         </Link>
-        <Link href="/product" className="hover:text-gray-900 transition">
-          Products
-        </Link>
-        <Link href="/company" className="hover:text-gray-900 transition">
+
+        <Link
+          href="/company"
+          className={`transition ${
+            pathname === "/company"
+              ? "text-[#0367FC] font-semibold"
+              : "hover:text-gray-900"
+          }`}
+        >
           Company
         </Link>
       </div>

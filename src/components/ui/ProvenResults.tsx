@@ -9,35 +9,35 @@ import BeyondCodeSection from "./BeyondCodeSection";
 const cards = [
   {
     id: 1,
-    title: "Chemco",
-    subtitle: "Data management",
+    title: "IMVI",
+    subtitle: "Sports Entertainment",
     description:
-      "In the highly competitive landscape of pharmaceutical retail in India, an...",
+      "Streamline data for peak performance.",
     color: "from-[#0B0E1A] to-[#1A1E2E]",
     accent: "bg-[#2F3BF2]",
-    image: "/images/ProvenResults/chemco.png",
-    imageSec: "/images/Cammi/chemco.jpg",
+    image: "/images/ProvenResults/imvi.png",
+    imageSec: "/images/ProvenResults/imvi2.png",
   },
   {
     id: 2,
-    title: "Medchart+",
-    subtitle: "Healthcare",
+    title: "CAMMI",
+    subtitle: "Marketing Expert",
     description: "In the dynamic landscape of pharmaceutical services and...",
     color: "from-[#0C0E20] to-[#15233C]",
     accent: "bg-[#4663FF]",
-    image: "/images/ProvenResults/medcharts.png",
-    imageSec: "/images/Cammi/medcharts.png",
+    image: "/images/ProvenResults/cammi.png",
+    imageSec: "/images/ProvenResults/cammi2.png",
   },
   {
     id: 3,
-    title: "Company",
-    subtitle: "Realestate business",
+    title: "Million Dollar Baby",
+    subtitle: "Data management",
     description:
       "In the ever-evolving landscape of real estate technology, organizations face...",
     color: "from-[#342A00] to-[#624A00]",
     accent: "bg-[#F2B705]",
-    image: "/images/ProvenResults/company.png",
-    imageSec: "/images/Cammi/company.png",
+    image: "/images/ProvenResults/mdb.png",
+    imageSec: "/images/ProvenResults/mdb2.png",
 
     audio: true,
   },
@@ -86,8 +86,8 @@ export default function ProvenResults() {
                 create measurable business outcomes.
               </p>
             </div>
-            <div className="flex items-center justify-between  px-4 py-2 w-[100%] max-w-[100%] ">
-              {/* Tabs (Left Side) */}
+            {/* <div className="flex items-center justify-between  px-4 py-2 w-[100%] max-w-[100%] ">
+             
 
               <div
                 className="flex justify-center items-center gap-1 self-stretch 
@@ -116,9 +116,7 @@ export default function ProvenResults() {
                     {tab}
                   </button>
                 ))}
-              </div>
-
-              {/* Browse More (Right Side) */}
+              </div> 
               <div className="flex items-center gap-3 text-gray-300">
                 <span className="text-sm font-medium cursor-pointer text-[#9C9C9D] transition">
                   Browse thousands more →
@@ -149,7 +147,7 @@ export default function ProvenResults() {
                       />
                     </svg>
                   </button>
-                  {/* <button className="w-[58px] h-[57px] flex items-center justify-center rounded-[86px] border border-white/10 bg-black opacity-100 hover:bg-black/80 transition"> */}
+                  
                   <button
                     className="flex justify-center items-center self-stretch 
   px-[21px] pt-[21px] pb-[20px] 
@@ -177,7 +175,7 @@ export default function ProvenResults() {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Cards Section */}
           {/* <div className="relative w-[368px] h-[518px] bg-white rounded-[24px] shadow-lg border border-gray-50">
@@ -228,11 +226,11 @@ export default function ProvenResults() {
               >
                 {/* Logo */}
                 <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                  <div className="w-14 h-14 rounded-[12px]  border-4 border-white shadow-xl flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-[10px]  border-4 border-white flex items-center justify-center">
                     <img
                       src={card.image}
                       alt={card.title}
-                      className="w-12 h-12 rounded-full"
+                      className="w-12 h-12 "
                     />
                   </div>
                 </div>
@@ -243,7 +241,7 @@ export default function ProvenResults() {
                     {card.title}
                   </p>
 
-                  <p className="text-[#0D0C10] mt-1 text-center font-[400] text-[28px] leading-[36.4px] tracking-[-0.28px] ">
+                  <p className="text-[#0D0C10]  mt-1 text-center font-[600] text-[28px] leading-[36.4px] tracking-[-0.28px] ">
                     {card.subtitle}
                   </p>
 
